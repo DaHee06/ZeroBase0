@@ -1,11 +1,9 @@
 package chapter02;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Practice {
+public class Array {
 
     public static void main(String[] args) {
 

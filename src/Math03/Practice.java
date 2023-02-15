@@ -77,3 +77,4 @@ public class Practice {
         System.out.println("최소 공배수 : " + p.getLCM(number1 , number2));
     }
 }
+
