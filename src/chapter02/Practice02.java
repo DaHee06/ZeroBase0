@@ -22,7 +22,7 @@ public class Practice02 {
                 }
             }
         }
-        if(idxMax == 0){
+        if(idxMax >= 0){
             System.out.println(idxMax);
         }
     }
