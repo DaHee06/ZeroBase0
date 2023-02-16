@@ -13,7 +13,7 @@ public class Practice02 {
     public static void main(String[] args) {
         int[] arr = {1, 1, 100, 1, 1, 1, 100};
         int target = 100;
-        int idxMax = -1;
+        int idxMax = -1;  //인덱스 번호
 
         for(int i = 0; i<arr.length ; i++){
             if(target == arr[i]) {

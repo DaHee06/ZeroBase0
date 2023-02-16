@@ -19,18 +19,19 @@ class MyArray{
             return;
         }
 
-        int[] arrDup = this.arr.clone();  //기존 데이타 복제
-        this.arr = new int[this.arr.length + 1];
+        int[] arrDup = this.arr.clone();  //기존 데이터 복제
+        this.arr = new int[this.arr.length + 1]; //기존 데이터에 추가될 것을 고려해 new int로 새로 정의
 
         for(int i =0; i< index ; i++){
             this.arr[i] = arrDup[i];
         }
 
-        //
+        //데이터 추가하려는 위치 다음부터 할당
         for(int i = index + 1 ; i<this.arr.length ; i++){
             this.arr[i] = arrDup[ i - 1 ];
         }
 
+        //원하는 위치에 데이터를 넣어준다.
         this.arr[index] = data;
     }
 
@@ -42,7 +43,7 @@ class MyArray{
 
         for(int i = 0; i < this.arr.length ; i++){
             if(this.arr[i] == data){
-                targetIndex = 1;
+                targetIndex = i;
                 break;
             }
         }
@@ -51,7 +52,7 @@ class MyArray{
             System.out.println("해당 데이터가 없습니다"); //위의 for문을 돌고 나서 targetIndex == -1
         } else {
             int[] arrDup = this.arr.clone();
-            this.arr = new int[this.arr.length - 1];
+            this.arr = new int[this.arr.length - 1];  //데이터 삭제 고려해 길이 -1인 new int 생성
 
             for(int i  =0 ; i < targetIndex ; i++){
                 this.arr[i] = arrDup[i];
