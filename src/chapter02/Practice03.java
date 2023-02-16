@@ -26,7 +26,7 @@ public class Practice03 {
 
 
         //답안
-        for(int i = 0; i<arr.length / 2 ; i++){ //중간 지점 기준으로 양 옆 숫자가 바뀌는 걳
+        for(int i = 0; i<arr.length / 2 ; i++){ //중간 지점 기준으로 양 옆 숫자가 바뀌는 것
             int tmp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = tmp;

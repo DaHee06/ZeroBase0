@@ -8,6 +8,7 @@ public class Practice05 {
     public static void main(String[] args) {
         int[] arr = { 5, 3, 1, 4, 6, 1};
 
+        //내답
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
