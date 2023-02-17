@@ -1,4 +1,4 @@
-package chapter02;
+package chapter02.Array;
 
 //배열 arr에서 peak 값 모두 출력(peak 좌우보다 큰 값)하시오
 
