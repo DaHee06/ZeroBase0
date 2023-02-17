@@ -1,4 +1,4 @@
-package chapter02;
+package chapter02.Array;
 
 //배열 arr의 값을 오름차순
 

@@ -1,4 +1,4 @@
-package chapter02;
+package chapter02.Array;
 
 //배열 arr에서 중복값을 제거한 새 배열을 만드시오.
 

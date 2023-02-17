@@ -1,4 +1,4 @@
-package chapter02;
+package chapter02.Array;
 
 //배열 arr 데이터 순서를 거꾸로 변경하시오
 //추가 배열을 사용하지 않고 구현

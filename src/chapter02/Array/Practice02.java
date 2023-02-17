@@ -1,4 +1,4 @@
-package chapter02;
+package chapter02.Array;
 // 배열 arr에서 target 내 해당되는 값의 인덱스를 출력
 // 해당 값이 여러 개 인 경우 가장 큰 인덱스를 출력
 
