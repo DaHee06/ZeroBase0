@@ -78,7 +78,7 @@ class DoublyLinkedList extends LinkedList{
                     this.tail = this.tail.prev;  //tail을 옮김
                     this.tail.next = null;
                 } else{
-                    pre.next = cur.next;
+                    pre.next = cur.next;   //지울 대상이 cur
                     cur.next.prev = pre;
                 }
                 break;
