@@ -14,7 +14,7 @@ class NodeBi{
     }
 }
 
-class DoublyLinkedList extends LinkedList{
+class DoublyLinkedList extends LinkedList {
     NodeBi head;
     NodeBi tail;
 
