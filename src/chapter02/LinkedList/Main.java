@@ -50,8 +50,10 @@ class LinkedList {
             return;
         }
 
+        //prev = cur?? 초기화
         Node cur = this.head;
         Node prev = cur;
+//        Node prev = null;
 
         while(cur.next != null){
             prev = cur;   //cur 하나 이전을 prev
@@ -59,9 +61,11 @@ class LinkedList {
         }
 
         if(cur == this.head){  //뒤에 아무것도 없다면 head가 제일 위에 있어서 null로 바꾸면 된다.
-            this.head = null;
+//            this.head = null;
+            cur = null;   //원소 1개만 남았을 때 remove 안됨
         }else{
             prev.next = null;  //만약 아니라면 삭제하려는 노드 앞의 노드(prev)의 next값을 null로 바꾼다.
+//            cur = null;   //아예 remove 안됨
         }
     }
 
@@ -120,8 +124,11 @@ public class Main {
         myList.showData();   //1 2
 
         myList.removeData();
+        myList.showData();
         myList.removeData();
+        myList.showData();
         myList.removeData();  //List is empty
+        myList.showData();
 
     }
 }

@@ -9,6 +9,8 @@ class CircularLinkedList{
     CircularLinkedList(NodeBi node){
         this.head = node;
         this.tail = node;
+
+        //??
         node.next = this.head; //자기 자신이 순환할 수 있도록 원형 형태로 만듦
         node.prev = this.head;
     }
@@ -77,7 +79,7 @@ class CircularLinkedList{
                     this.head = null;
                     this.tail = null;
                 }else if(cur == this.head){
-                    cur.next.prev = this.head.prev;
+                    cur.next.prev = this.head.prev;  //this.head.prev = this.tail?
                     this.head = cur.next;
                     this.tail.next = this.head;
                 }else if(cur == this.tail){
