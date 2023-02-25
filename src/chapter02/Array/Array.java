@@ -10,10 +10,12 @@ public class Array {
         //1차원 배열
         System.out.println("====1차월 배열=====");
         int[] arr = { 1, 2, 3, 4, 5};
+//        반복문 사용하기
         for(int item : arr){
             System.out.println("item = "+ item);
         }
 
+//        java.util.Arrays의 toString() 메소드 사용하기
         arr[1] = 100;
         System.out.println("arr = " + Arrays.toString(arr));
 
